@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+}
+.container {
+    width: 1440px;
+    height: 800px;
+    position: relative;
+}
+.quotemark {
+    position: absolute;
+    top: 210px;
+    left: 260px;
+    z-index: -1;
+}
+
+.curve {
+    position: absolute;
+    left:0px;
+    bottom:0px;
+    z-index: -1;
+}
+
+.pattern-bg {
+    position: absolute;
+    bottom: 100px;
+    right: 70px;
+    z-index: -1;
+}
+
+.quote {
+    position: absolute;
+    left: 160px;
+    top: 290px;
+    width: 625px;
+    z-index: 2;
+}
+.quote-body {
+    color: hsl(240, 38%, 20%);
+    font-weight: 300;
+    width: 625px;
+    margin: 0px 0px 50px 0px;
+}
+
+.author  {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    font-size: 20px;
+    color: hsl(240, 38%, 20%);
+}
+
+.author-name, .author-title {
+    margin: 0px;
+    font-weight: 500;
+}
+.author-name {
+    margin-right: 15px;
+}
+.author-title {
+    color: hsl(240, 18%, 77%);
+}
+
+.image-container {
+    position: absolute;
+    bottom: 145px;
+    right: 170px;
+    height: 540px;
+}
+
+.slider {
+    display: flex;
+}
+
+.left {
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 60px;
+    bottom:-25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px 0px 0px 30px;
+    z-index: 1;
+
+}
+.right {
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 110px;
+    bottom: -25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 30px 30px 0px;
+    z-index: 1;
+}
+
+.image {
+    box-shadow: -60px 100px 45px -85px #babacf
+}
+
+.hidden {
+    display: none;
+}
